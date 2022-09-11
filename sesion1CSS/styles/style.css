@@ -1,0 +1,13 @@
+body{background-color: lightblue;}
+
+h1{color:white; background-color: cadetblue;}
+
+p{font-family: verdana; font-size: 25px; text-align: left;}
+
+hr{border: solid blueviolet;}
+
+#parrafo-especial{background-color: burlywood; text-align: right;}
+
+.texto-small{font-size: 10px;}
+
+*{text-align: center;}
