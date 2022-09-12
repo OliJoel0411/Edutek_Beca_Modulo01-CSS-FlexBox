@@ -1,0 +1,9 @@
+div{
+    background-color: red;
+    color: white;
+}
+div p{
+    font-size: 32px;
+    text-align: center;
+    text-decoration: solid;
+}   
