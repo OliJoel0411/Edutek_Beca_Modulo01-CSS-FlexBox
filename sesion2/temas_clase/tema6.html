@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/estilo1.css">
+  <title>Tema 6 Sesión 2 CSS</title>
+
+  <style>
+    .leido,
+    .sin-leer {
+      color: white;
+      background-color: black;
+    }
+
+    .leido {
+      font-size: 25px;
+    }
+
+    .sin-leer {
+      font-size: 40px;
+    }
+
+    aside,
+    article {
+      background-color: lightblue;
+    }
+
+    aside {
+      font-size: 40px;
+    }
+
+    article {
+      font-size: 25px;
+    }
+
+    #libro1, #libro2{
+      background-color: burlywood;
+    }
+    #libro1{
+      font-weight: bold;
+    }
+    #libro2{
+      font-weight: 100;
+    }
+
+    .leido,
+    article,
+    #libro1{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Agrupando selectores</h1>
+  <header>
+    <nav>
+      <a href="/index.html">Volver</a>
+    </nav>
+  </header>
+
+  <div class="leido">
+    <p>Soy el primer div</p>
+  </div>
+
+  <div class="sin-leer">
+    <p>Soy el segundo div</p>
+  </div>
+
+  <aside>
+    <p>Soy un elemento aside</p>
+  </aside>
+  <article>
+    <p>Soy un elemento article</p>
+  </article>
+
+  <div id="libro1">
+    <p>Soy un div con id</p>
+  </div>
+
+  <div id="libro2">
+    <p>Soy un div con id2</p>
+  </div>
+
+
+</body>
+
+</html>

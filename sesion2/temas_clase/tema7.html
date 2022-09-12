@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/estilo1.css">
+  <title>Tema 7 Sesión 2 CSS</title>
+
+  <style>
+    .subseccion.encabezado {
+      color: red;
+    }
+
+    .subseccion#texto {
+      color: blue;
+    }
+
+    .subseccion.encabezado#texto-grande {
+      font-size: 80px;
+    }
+
+    p.subseccion.ejemplo {
+      background-color: beige;
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Encadenando selectores</h1>
+  <header>
+    <nav>
+      <a href="/index.html">Volver</a>
+    </nav>
+  </header>
+
+  <div>
+    <div class="subseccion encabezado">
+      Ultimo post
+    </div>
+
+    <p class="subseccion previa" id="texto">
+      Acá aparecera un mensaje
+    </p>
+  </div>
+
+  <p class="subseccion encabezado">Texto adicional</p>
+  <p class="subseccion encabezado" id="texto-grande">Texto grande</p>
+
+  <div>
+    <p class="subseccion ejemplo">Ultimo Texto!!!</p>
+  </div>
+
+</body>
+
+</html>
