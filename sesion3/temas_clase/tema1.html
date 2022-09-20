@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 1 Sesión 2 CSS</title>
+    <style>
+        .subseccion.encabezado{
+            color:red;
+        }
+        button#importante{
+            background-color: yellow;
+            color: black;
+        }
+        button.correcto#advertencia{
+            background-color: green;
+            color: beige;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1>Encadenando Selectores</h1>
+    <header>
+        <nav>
+            <a href="/index.html">Volver</a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div class="subseccion encabezado">
+                <p>Ultimo post</p>
+            </div>
+            <p id="texto" class="subseccion previa">
+                Mensaje privado
+            </p>
+        </div>
+        <button id="importante">Soy un boton</button>
+        <button class="correcto" id="advertencia">Soy otro boton</button>
+    </main>
+
+</body>
+
+</html>

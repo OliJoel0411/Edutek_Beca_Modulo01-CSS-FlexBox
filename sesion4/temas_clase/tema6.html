@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 6 Sesión 4 CSS</title>
+    <style>
+        /*regla 1*/
+        * {
+            color: cadetblue;
+        }
+
+        /*regla 2*/
+        h2 {
+            color: orange;
+        }
+
+        /*regla 3*/
+        .titulo{
+            color:brown;
+        }
+
+        /*regla 4*/
+        #peligro{
+            color:red;
+        }
+        /*regla 5*/
+        #advertencia{
+            color:magenta;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Especificidad 5</h1>
+    <header>
+        <nav>
+            <a href="/index.html">Volver</a>
+        </nav>
+    </header>
+
+    <h2>Soy un título</h2>
+
+    <h2 class="titulo">Soy otro título</h2>
+
+    <h2 id="peligro">Soy otro título mas</h2>
+
+    <h2 id="advertencia" style="color:cyan;">Soy el ultimo título</h2>
+
+</body>
+
+</html>

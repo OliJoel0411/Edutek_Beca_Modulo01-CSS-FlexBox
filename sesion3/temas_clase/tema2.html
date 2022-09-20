@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2 Sesión 3 CSS</title>
+    <style>
+        .ancestro .contenido{
+            background-color: blueviolet;
+        }
+        .botones #peligro{
+            background-color: red;
+        }
+        .botones #advertencia{
+            background-color: yellow;
+        }
+        button p{
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Combinador Descendiente</h1>
+    <header>
+        <nav>
+            <a href="/index.html">Volver</a>
+        </nav>
+    </header>
+
+    <div class="ancestro">
+        <p>1 soy ancestro</p>
+        <div class="contenido">
+            <p>2 soy contenido</p>
+            <div class="contenido">
+                <p>3 soy sub conenido</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p>4 Yo también soy contenido!!!</p>
+    </div>
+
+    <div class="botones">
+        <button id="advertencia">Soy una advertencia</button>
+        <button id="peligro">Soy peligroso</button>
+    </div>
+    <button id="mensaje"><p>soy un parrafo</p></button>
+
+
+
+    
+
+
+</body>
+
+</html>

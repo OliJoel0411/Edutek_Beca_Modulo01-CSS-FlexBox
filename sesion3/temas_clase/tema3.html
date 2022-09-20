@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 3 Sesión 2 CSS</title>
+    <style>
+        body{
+            background-image: url("/img/luna.png");
+
+            /*ancho y alto de la imagen de fondo*/
+            background-size: 300px 300px;
+
+            /*la imagen de fondo no se repetira*/
+            background-repeat: no-repeat;
+
+            /*la imagen de fondo se repetira en el eje horizontal*/
+            /*background-repeat: repeat-x;*/
+
+             /*la imagen de fondo se repetira en el eje vertical*/
+            /*background-repeat: repeat-y;*/
+
+            /*posicion de la imagen en parte superior derecha*/
+            background-position: right top;
+
+            /*imagen de fondo fijada sigue al usuario*/
+            background-attachment: fixed;
+
+        }
+        div {
+            background-color: chocolate;
+            font-size: 30px;
+        }
+
+        .primero {
+            opacity: 1;
+        }
+
+        div.segundo {
+            opacity: 0.6;
+        }
+
+        div.tercero {
+            opacity: 0.3;
+        }
+
+        div.cuarto {
+            opacity: 0.1;
+        }
+        .cuarto{
+            opacity: 0.8;
+        }
+
+        div.rgba {
+            background-color: rgb(100,0,150); 
+            opacity: 1;
+        }
+        div.rgba.primero{
+            background-color: rgba(100,0,150,1); 
+        }
+        div.rgba.segundo{
+            background-color: rgba(100,0,150,0.6); 
+        }
+        div.rgba.tercero{
+            background-color: rgba(100,0,150,0.3); 
+        }
+        div.rgba.cuarto{
+            background-color: rgba(100,0,150,0.1); 
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Colores</h1>
+    <header>
+        <nav>
+            <a href="/index.html">Volver</a>
+        </nav>
+    </header>
+
+
+    <div class="primero">
+        <p>opacity 1</p>
+    </div>
+    <div class="segundo">
+        <p>opacity 0.6</p>
+    </div>
+    <div class="tercero">
+        <p>opacity 0.3</p>
+    </div>
+    <div class="cuarto">
+        <p>opacity 0.1</p>
+    </div>
+
+    <button class="cuarto">Soy otro boton</button>
+
+    <div class="rgba primero">
+        <p>opacity 1</p>
+    </div>
+    <div class="rgba segundo">
+        <p>opacity 0.6</p>
+    </div>
+    <div class="rgba tercero">
+        <p>opacity 0.3</p>
+    </div>
+    <div class="rgba cuarto">
+        <p>opacity 0.1</p>
+    </div>
+
+
+
+</body>
+
+</html>

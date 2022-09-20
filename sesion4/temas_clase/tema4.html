@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 4 Sesión 4 CSS</title>
+    <style>
+        p {
+            font-size: 50px;
+        }
+
+
+        /*regla 1*/
+        /*Con !important defines que esa regla tenga la mayor precedencia*/
+        .clase1 {
+            color: blue !important;
+        }
+
+        /*regla 4*/
+        #id1 {
+            color: purple;
+        }
+        /*regla 2*/
+        .clase1,
+        .clase3 {
+            color: red;
+        }
+
+        /*regla 3*/
+        .clase1,
+        .clase3 {
+            color: green;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Especificidad 3</h1>
+    <header>
+        <nav>
+            <a href="/index.html">Volver</a>
+        </nav>
+    </header>
+
+    <div class="clase1">
+        <div class="clase1 clase2 clase3" id="id1">
+            <p>Hola</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

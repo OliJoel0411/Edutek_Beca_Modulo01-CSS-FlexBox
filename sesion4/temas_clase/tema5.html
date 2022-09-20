@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 5 Sesión 4 CSS</title>
+    <style>
+        p {
+            font-size: 50px;
+        }
+
+
+        /*Ambas reglas tienen la misma precedencia, el orden indicara cual se aplicara*/
+
+        /*regla 1*/
+        .clase1.clase2 {
+            font-size: 12px;
+        }
+
+        /*regla 2*/
+        /*El combinador descendiente no agrega precedencia*/
+        .clase1 .clase2 {
+            font-size: 50px;
+        }
+
+
+        /*regla 3*/
+        .clase1,
+        .clase2 {
+            font-size: 100px;
+        }
+
+        /*Combinador descendiente*/
+        .externo .interno{
+            background-color: aquamarine;
+        }
+    
+        .externo{
+            background-color: blueviolet;
+        }
+
+        .interno{
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Especificidad 4</h1>
+    <header>
+        <nav>
+            <a href="/index.html">Volver</a>
+        </nav>
+    </header>
+
+    <div class="clase1">
+        <div class="clase1 clase2">
+            Hola
+        </div>
+    </div>
+    
+    <div class="externo">
+        <div class="interno">
+            Texto interno
+        </div>
+    </div>
+
+
+</body>
+
+</html>

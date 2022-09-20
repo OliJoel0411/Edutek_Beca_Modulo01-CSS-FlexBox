@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 1 Sesión 7 CSS</title>
+
+    <style>
+        .div1 {
+            border: 1px solid black;
+        }
+
+        .parrafo1 {
+            border-top: 1px solid blue;
+        }
+
+        .div2 {
+            border-right: 4px solid red;
+        }
+
+        div p {
+            border-left: 8px solid pink;
+        }
+
+        #par1 {
+            border-style: solid;
+            border-width: 5px;
+            border-top-width: 1px;
+        }
+
+        #par2 {
+            border-style: solid;
+            border-width: medium;
+            border-right-width: 1px;
+        }
+
+        #par3 {
+            border-style: dotted;
+            border-width: 2px;
+            border-bottom-width: 1px;
+        }
+
+        #par4 {
+            border-style: dotted;
+            border-width: thick;
+            border-left-width: 1px;
+        }
+
+        #par5 {
+            /*arriba derecha abajo izquierda*/
+            border-style: solid dotted groove none;
+            border-width: thick;
+            border-left-width: 1px;
+        }
+
+        #par6 {
+            /*aplicamos un borde de 3px a los 4 lados, punteado y color rojo*/
+            border: 3px dotted #800;
+        }
+
+        #par7 {
+            /*un color de borde distinto para cada lado del borde*/
+            border: 3px solid;
+            border-color: red blue orange pink;
+        }
+
+        #par8 {
+            border: 3px solid;
+            border-radius: 5px;
+        }
+        #par9 {
+            border: 3px solid;
+            border-radius: 12px;
+        }
+        input, button{
+            border: 3px;
+            border-radius: 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Bordes</h1>
+    <header>
+        <nav>
+            <a href="/index.html">Volver</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <br>
+            <div class="div1">
+                Soy un texto dentro de div
+            </div>
+            <p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolores eum excepturi
+                nostrum, veritatis porro nisi omnis voluptas nemo. Vel quos animi possimus deserunt. Necessitatibus
+                asperiores architecto quibusdam assumenda quas.
+                Perspiciatis quisquam, ab, doloremque aut non repudiandae deleniti nemo reiciendis illum, fuga ex rem!
+                Quidem aliquam omnis quibusdam. Adipisci, illum! Reiciendis qui ipsam quaerat earum tempora doloribus
+                fugiat vel illum!</p>
+
+            <div class="div2">
+                <p>Soy un parrafo dentro de div</p>
+            </div>
+
+            <h2>Tipos de borde</h2>
+            <ol>
+                <li>
+                    <p style="border:5px dotted;">dotted</p>
+                </li>
+                <li>
+                    <p style="border:5px dashed;">dashed</p>
+                </li>
+                <li>
+                    <p style="border:5px solid;">solid</p>
+                </li>
+                <li>
+                    <p style="border:5px double;">double</p>
+                </li>
+                <li>
+                    <p style="border:5px groove;">groove</p>
+                </li>
+                <li>
+                    <p style="border:5px ridge;">ridge</p>
+                </li>
+                <li>
+                    <p style="border:5px inset;">inset</p>
+                </li>
+                <li>
+                    <p style="border:5px outset;">outset</p>
+                </li>
+                <li>
+                    <p style="border:5px none;">none</p>
+                </li>
+                <li>
+                    <p style="border:5px hidden;">hidden</p>
+                </li>
+            </ol>
+            <hr>
+            <h2>Propiedad width del borde</h2>
+            <p id="par1">width de 5px</p>
+            <p id="par2">width medium</p>
+            <p id="par3">width 2px</p>
+            <p id="par4">width thick</p>
+            <p id="par5">varios bordes</p>
+            <p id="par6">notación corta</p>
+            <p id="par7">notación corta color borde</p>
+            <p id="par8">borde redondeado</p>
+            <p id="par9">borde redondeado</p>
+
+
+            <button>Boton1</button>
+            <input type="text" placeholder="Ingresa texto">
+            <input type="submit" value="Boton2">
+
+
+
+
+            <hr>
+        </article>
+    </main>
+
+</body>
+
+</html>

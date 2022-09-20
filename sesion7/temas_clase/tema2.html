@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2 Sesión 7 CSS</title>
+    <style>
+        .div2 {
+            margin-top: 5px;
+            margin-bottom: 25px;
+            background-color: burlywood;
+        }
+        
+        div{
+            border:1px solid;
+        }
+
+        #a1{
+            border: 1px solid;
+            margin: 30px;
+            margin-right: 30px;
+            background-color: aquamarine;
+        }
+        #a2{
+            border: 1px solid;
+            margin: 20px;
+            margin-left: 40px;
+            margin-top: 100px;
+            background-color: aquamarine;
+        }
+        .externo{
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-left: 30px;
+           background-color: antiquewhite;
+        }
+        .interno{
+            margin-top: 100px;
+            margin-left: 30px;
+            background-color: cadetblue;
+        }
+        .parrafo-interno{
+            background-color: crimson;
+            margin-bottom: 20px;
+            margin: 15px 30px 60px 120px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Margenes</h1>
+    <header>
+        <nav>
+            <a href="/index.html">Volver</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="div1" style="margin-bottom: 15px; background-color: cornflowerblue;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi vel dolorum, esse labore alias
+                    veniam perferendis. In temporibus porro itaque. Asperiores architecto natus earum enim perspiciatis
+                    magnam recusandae voluptatum.
+                    Id eum nihil error, nemo cumque obcaecati voluptatibus quod quam exercitationem vitae at, deserunt
+                    ex. Quasi, qui consequatur! Pariatur, iure hic asperiores in totam laboriosam tenetur
+                    necessitatibus. Sunt, quibusdam maiores?
+                    Ab nihil ipsum perspiciatis animi obcaecati provident hic sed nemo? Reprehenderit consequatur et
+                    officiis, impedit illum excepturi iste vero dolorem neque aliquam unde cupiditate possimus,
+                    asperiores saepe deleniti eos mollitia.</p>
+            </div>
+            <div class="div2">
+                <h2>Título de prueba</h2>
+            </div>
+            <a id="a1" href="#">Vinculo1</a>
+            <a id="a2" href="#">Vinculo2</a>
+        </article>
+
+        <div class="externo">
+            Soy el div externo
+            <div class="interno">
+                Soy el div interno
+            </div>
+            <p class="parrafo-interno">Soy un parrafo interno</p>
+        </div>
+
+        <div>
+            Soy un div fuera de externo
+        </div>
+    </main>
+
+</body>
+
+</html>
