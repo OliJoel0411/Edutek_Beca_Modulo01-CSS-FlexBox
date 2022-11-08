@@ -1,0 +1,55 @@
+*{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+
+.contenedor{
+    
+    width: 70%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+
+.contenedor .sol {
+    width: 20%;
+
+
+}
+
+.contenedor .sol  img{
+    width: 100%;
+    height: auto;
+
+
+}
+
+img:hover{
+    border: 3px solid blue;
+}
+
+.sol{
+    width: 20%;
+    width: 20%;
+    background-color: beige;
+}
+
+
+
+@media screen {
+    @media (min-width: 1200px){
+        .contenedor{
+            background-color: red;
+            background-image: radial-gradient(whitesmoke,red);
+        }
+    .img:hover{
+        border: 10px solid blue;
+
+    }
+    }
+
+    }
+    
