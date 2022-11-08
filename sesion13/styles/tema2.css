@@ -1,0 +1,30 @@
+
+
+.flexbox-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: rgb(170, 170, 9);
+    height: 800px;
+    
+}
+
+.flexbox-elemento{
+    border: 3px solid black;
+    background-color: rgb(218, 213, 213);
+    margin:10px;
+    width: 200px;
+    
+}
+.elemento-1{
+    min-height: 100px;
+
+}
+.elemento-2{
+    min-height: 200px;
+}
+.elemento-3{
+    min-height: 300px;
+    
+}

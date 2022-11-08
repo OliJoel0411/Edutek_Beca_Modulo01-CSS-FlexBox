@@ -1,0 +1,73 @@
+
+
+
+/*:target*/
+/*Selecciona el elemento activo a partir de la URL que se le dio clic*/
+.card:target{
+    border: 2px solid red;
+}
+
+/*Selector de atributo*/
+/*Aplica el estilo a las imagenes que contengan un valor en el atributo alt*/
+.card img[alt]{
+    border: 5px dotted green;
+}
+
+/*Aplica el estilo a todos las imagenes que no tengan un atributo alt*/
+.card img:not([alt]){
+    border: 5px dotted red;
+}
+
+/*
+.card img[src]{
+    width: 10%;
+}
+*/
+
+/*Funciona en base al orden definido en el html*/
+.card:nth-child(1){
+    background-color: aqua;
+}
+
+/*Aplicara el estilo a los hijos impares*/
+.card:nth-child(odd){
+    background-color: purple;
+}
+
+/*Seleccionara los elementos pares*/
+.card:nth-child(even){
+    background-color: cadetblue;
+}
+
+/*Pseudoelemento*/
+/*::before permite insertar contenido antes de un elemento*/
+.card p::before{
+    content:'🌟';
+    display:block;
+    text-align: center;
+}
+
+/*::after permite insertar contenido despues de un elemento*/
+.card p::after{
+    content:'🌟';
+    display:block;
+    text-align: center;
+}
+
+/*Muestra el valor del atributo href despues de los elementos <a>*/
+a::after{
+    content:'('attr(href)')';
+}
+
+
+.card figcaption::first-letter{
+    font-size: 3rem;
+    color: white;
+}
+
+
+.primerLetra{
+    color:white !important;
+}
+
+

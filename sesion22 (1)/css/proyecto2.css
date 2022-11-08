@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*em -> relativo a el tamaño de fuente del elemento padre*/
+/*rem -> relativo al tamaño de fuente del elemento Root (raiz)*/
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font: 1.5rem "Nunito", sans-serif;
+    /*vh -> 1% alto del dispositivo*/
+    min-height: 100vh;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: #1e293b;
+    color: whitesmoke;
+    text-align: center;
+}
+
+nav {
+    background-color: white;
+    padding: 0.5rem;
+    border-bottom: 2px solid #000;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a,
+nav a:visited {
+    color: #000;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #777;
+}
+
+
+/*any-link*/
+/*Notacion corta que incorpora las pseudo clases :link y :visited*/
+a:any-link{
+    font-size: 30px;
+    color: green;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+
+}
+
+.card {
+    width: min(100%, 350px);
+    background-color: #cbd5e1;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card figure {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card img {
+    border: 5px double #333;
+    border-radius: 50%;
+}
+
+.card figcaption {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+    /*Permite controlar que el texto no salte a una nueva linea*/
+    white-space: nowrap;
+}
+
+.card p {
+    white-space: nowrap;
+}
+
+/*Cambiamos el tamaño de fuente al #profile2*/
+#profile2.card figcaption {
+    font-size: 1.6rem;
+}
+
+/*Media Query*/
+
+/*small*/
+@media screen and (min-width:576px) {
+    main {
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+
+    .card {
+        width: min(100%, 400px);
+    }
+
+    .card:last-child {
+        order: -1;
+    }
+
+    /*
+    #profile1{
+        order:1;
+    }
+    #profile2{
+        order:-1;
+    }
+    #profile3{
+        order:0;
+    }
+    */
+}
+
+/*Medianos*/
+@media screen and (min-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .card {
+        width: min(100%, 325px);
+    }
+
+    .card figure {
+        flex-flow: column-reverse;
+    }
+
+    .card p {
+        margin-top: 1rem;
+    }
+}
+
+/*large*/
+@media screen and (min-width:900px) {
+    .card {
+        width: min(100%, 400px);
+    }
+
+    .card:nth-child(2) {
+        order: -1;
+    }
+}

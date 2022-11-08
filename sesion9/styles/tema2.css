@@ -1,0 +1,23 @@
+*{
+    /* Aplicamos la propiedad a todos los elementos de la página*/
+    box-sizing: border-box;
+}
+form{
+    width: 200px;
+    background-color: chocolate;
+}
+
+input,
+textarea{
+    width: 50%;
+}
+
+div{
+    background-color: coral;
+    width: 75%;
+    padding-top: 10%;
+}
+
+.interno{
+    background-color: red;
+}

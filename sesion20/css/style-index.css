@@ -1,0 +1,35 @@
+/*Asigna un valor a cada elemento
+el cual sirve para distribuirlo segun necesitemos*/
+.elemento1 {grid-area: header;}
+.elemento2 {grid-area: menu;}
+.elemento3 {grid-area: main;}
+.elemento4 {grid-area: aside;}
+.elemento5 {grid-area: footer;}
+
+.contenedor{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-areas:
+    'header header header header header'
+    'menu main main aside aside'
+    'menu footer footer footer footer';
+
+    padding: 10px;
+    /*
+    column-gap: 10px;
+    row-gap: 5px;
+    */
+    gap: 10px 5px;
+}
+
+.contenedor > div{
+    background-color: cadetblue;
+    border: 1px  solid black;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+
+

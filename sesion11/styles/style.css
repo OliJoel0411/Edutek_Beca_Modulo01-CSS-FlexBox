@@ -1,0 +1,130 @@
+
+/*aplicamos margen, padding y fuente a todos los elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    /* vw -> viewport width
+       vh -> vieport height
+       1vh 1wh ->  1%
+    */   
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("/img/fondo1.webp");
+    /* permite que la imagen de fondo cubra totalmente el contenedor */
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    /*permite diseñar disposicion responsiva*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width:150px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    /* Usamos inline block para mostrar los elementos de forma horizontal, permite definir un ancho y alto, se respetan los margenes superiores e inferiores, no hace un salto de linea entre cada elemento*/
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    /*quitamos el subrayado del enlace*/
+    text-decoration: none;
+    color:white;
+    /*cambia el texto a mayúscula*/
+    text-transform: uppercase;
+}
+
+/*::after permite insertar algo despues de un elemento*/
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+.contenido{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    color:white;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.contenido h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.contenido p{
+    margin:20px auto;
+    font-weight: 100;
+    /*Cambia el espacio entre cada linea de texto*/
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid #009688;
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background-color: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    transition: 0.5s;
+    width:0%
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border:none;
+}
+
+
+
+
+

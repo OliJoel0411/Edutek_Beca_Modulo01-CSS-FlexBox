@@ -1,0 +1,130 @@
+/*Estilos generales*/
+ul {
+    display: flex;
+    border: 2px solid red;
+    padding: 0;
+}
+
+li {
+    width: 150px;
+    height: 150px;
+    background-color: cadetblue;
+    margin: 8px;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*tema 1*/
+/*Order, permite modificar el orden de los elementos en el contenedor*/
+
+/*por defecto el valor es 0*/
+
+/*Si dos elementos tienen el mismo valor en order, se tomara en cuenta la posicion de los elementos en el codigo HTML*/
+
+/*Los elementos se ordenan de menor a mayor*/
+#tema1 li:nth-child(1) {
+    order: 10;
+}
+
+#tema1 li:nth-child(2) {
+    order: 9;
+}
+
+#tema1 li:nth-child(3) {
+    order: 5;
+}
+
+#tema1 li:nth-child(4) {
+    order: 3;
+}
+
+#tema1 li:nth-child(5) {
+    order: 0;
+}
+
+/*tema 2*/
+/*flex grow*/
+/*Permite hacer crecer el elemento*/
+/*Su valor por defecto es 0*/
+#tema2 #lista1 li:nth-child(1) {
+    flex-grow: 1;
+}
+
+#tema2 #lista1 li:nth-child(3) {
+    flex-grow: 3;
+}
+
+#tema2 #lista1 li:nth-child(2) {
+    flex-grow: 0;
+}
+
+/*flex shrink*/
+/*permite que un elemento se reduzca*/
+/*Su valor por defecto es 1*/
+#tema2 #lista2 li:nth-child(1) {
+    flex-shrink: 0;
+}
+
+#tema2 #lista2 li:nth-child(2) {
+    flex-shrink: 1;
+}
+
+#tema2 #lista2 li:nth-child(3) {
+    flex-shrink: 3;
+
+}
+
+/*Tema 3*/
+/*flex-basis define el tamaño inicial del elemento flex*/
+
+/*Se aplica antes de flex-grow y flex-shrink*/
+
+
+#tema3 li:nth-child(1) {
+    flex-basis: 200px;
+}
+
+#tema3 li:nth-child(2) {
+    flex-basis: 10%;
+}
+#tema3 li:nth-child(3) {
+
+    flex-basis: auto;
+}
+
+/*Tema 4*/
+/*flex es la notacion corta para: flex-grow, flex-shrink, flex-basis*/
+
+/*El primer valor es para grow, el segundo para shrink, el tercero para basis*/
+
+/*El elemento no crece, se reduce cuando sea necesario y el tamaño inicial depende del contenido*/
+
+#tema4 li{
+    width: auto;
+}
+#tema4 li:nth-child(1) {
+    flex: 0 1 auto;
+}
+
+#tema4 li:nth-child(2) {
+    flex: 0 0 auto;
+    /*flex: none;*/
+}
+
+#tema4 li:nth-child(3) {
+    flex: 1 1 auto;
+    /*flex: none;*/
+}
+
+/*Tema 5*/
+#tema5 ul{
+    height: 400px;
+    align-items: center;
+}
+/*Permite controlar la posicion del elemento dentro del contenedor, pero de manera individual*/
+#tema5 li:nth-child(1) {
+    height: auto;
+    align-self: stretch;
+}

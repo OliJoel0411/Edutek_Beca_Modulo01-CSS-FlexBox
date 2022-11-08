@@ -1,0 +1,39 @@
+#tema6 .contenedor {
+    display: grid;
+    gap: 20px;
+    background-color: #08415C;
+    color: white;
+    
+
+}
+
+#tema6 .elemento {
+    background-color: #CC2936;
+    text-align: center;
+    padding: 20px;
+}
+
+#tema6 .elemento1 {
+    /*Notacion corta para
+     grid-column-start: 1;
+    grid-column-end: 3;*/
+    grid-row: 1 / span 3;
+    
+}
+
+#tema6 .elemento2 {
+    grid-column: 3;
+    /*se expande desde 1 hasta antes de la 4. */
+    grid-row: 1 / 4;
+    /*Para evitar este tipo de confusiones, utilizamos *span* , inicia en la columna 1 y se extiende 3 columnas*/
+    grid-row: 1 / span 3;
+}
+#tema6 .elemento3 {
+    grid-row: 4;
+    grid-column: 1 / span 3;
+}
+#tema6 .elemento6 {
+    grid-column: 1 / span 3;
+}
+
+/*grid-column y grid row permiten colocar los elementos de manera individual y definir colspan y rowspan*/

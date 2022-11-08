@@ -1,0 +1,107 @@
+/* Cambiamos el color de fondo de body */
+body {
+    background-color: rgb(122, 121, 121);
+}
+
+/* ejemplo 1 */
+.container-uno {
+    background-color: white;
+    margin: 50px 500px;
+    padding: 40px;
+
+}
+
+.fila-form {
+    padding: 10px 0;
+    display: flex;
+}
+
+.fila-form label {
+    padding-right: 10px;
+
+}
+
+.fila-form input {
+    flex: 1;
+}
+
+/* Ejemplo 2 distribuir el contenido en columnas */
+
+.disposicion-columna {
+    /* Define el ancho maximo del elemento*/
+    max-width: 1300px;
+    background-color: white;
+    /*Permite centrar el elemento horizontalmente*/
+    margin: 50px auto 0 auto;
+    padding: 20px 50px;
+    text-align: justify;
+    /*Modificamos el interlineado*/
+    line-height: 1.65;
+    /*Por defecto display:flex colocara los elementos en columnas*/
+    display: flex;
+}
+
+.columna-principal,
+.lateral-uno,
+.lateral-dos {
+    margin: 0 20px;
+}
+
+.columna-principal {
+    flex: 2;
+    order: 2;
+}
+
+.lateral-uno {
+    flex: 1;
+    order: 1;
+}
+
+.lateral-dos {
+    flex: 1;
+    order: 3;
+}
+
+
+/*Ejemplo 3*/
+/*Columnas de un mismo tamaño y espacio entre ellas*/
+.call-out-contenedor {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    /*justify-content: stretch;*/
+    /*justify-content: flex-start;*/
+    /* justify-content: flex-end;*/
+    /*justify-content: center;*/
+    /*justify-content: space-around;*/
+    
+
+}
+
+.call-out {
+    padding: 20px;
+    /**/
+    /*width: 30%;*/
+    flex-basis: 30%;
+    box-sizing: border-box;
+}
+
+/*Usamos pseudoclases para colorear*/
+.call-out:nth-child(1) {
+    background-color: #c0dbe2;
+}
+
+.call-out:nth-child(2) {
+    background-color: #cdf1c3
+}
+
+.call-out:nth-child(3) {
+    background-color: #ccb9da;
+}
+
+/*Aplicamos flexbox solamente de 900 px en adelante*/
+@media(min-width:900px){
+    .call-out-contenedor{
+        display: flex;
+        justify-content: space-between;
+    }
+}

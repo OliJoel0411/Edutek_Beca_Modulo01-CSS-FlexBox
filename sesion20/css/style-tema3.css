@@ -1,0 +1,54 @@
+a[href]{
+    background-color: red;
+}
+
+/*El valor debe ser identico*/
+a[href="www.google.com"]{
+    background-color:blue;
+}
+
+/*El valor debe iniciar con...*/
+a[href^="www"]{
+    background-color:brown;
+}
+
+/*alt + 126 -> ~*/
+/*afectaras a elementos que contengan el valor*/
+a[class~="clase2"]{
+    font-size: 30px;
+}
+
+a[href*=".com"]{
+    font-size: 45px;
+}
+
+/*alt + 94 -> ^*/
+[class^="elem"]{
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contenedor {
+    display: grid;
+    /*Permite distribuir el contenido en columnas*/
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    column-gap: 25px;
+    row-gap: 10px;
+    /*row, column */
+    gap: 10px 25px;
+}
+
+.elemento1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.elemento3{
+    grid-row-start: 2;
+    grid-row-start: 3;
+}
+

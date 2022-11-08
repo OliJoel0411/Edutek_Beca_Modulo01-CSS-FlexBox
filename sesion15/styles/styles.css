@@ -1,0 +1,174 @@
+/*.fa-youtube{
+    color: red;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-twitter{
+    color: #11b4f9;
+}
+.fa-globe{
+    color: green;
+}
+.fa-instagram{
+    color: rgb(107, 1, 89);
+} */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    display: grid;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    line-height: 3.8;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    /*
+    flex-direction: row;
+    flex-wrap: wrap; */
+    /*Notación corta que incluye flex-direction y flex-wrap*/
+    flex-flow: row wrap;
+    padding: 50px;
+    color: white;
+    background: rgb(57, 56, 59);
+}
+
+/*> Permite dar estilo a los elementos hijos del selector del lado izquierdo*/
+
+/*Damos estilo a los elementos hijos de la clase .footer*/
+.footer>* {
+    flex: 1;
+}
+
+.area-izquierda {
+    /*em es una unidad relativa al tamaño de letra*/
+    margin-right: -12em;
+}
+
+.footer-final img {
+    width: 25%;
+}
+
+.area-izquierda {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: darkorange;
+    /*Permite modificar la separación entre las letras*/
+    letter-spacing: 3px;
+}
+
+.footer ul {
+    /*Quitamos la viñeta a los elementos de la lista*/
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    /*em va de la mano con el tamaño de fuente*/
+    line-height: 2em;
+}
+
+.footer a {
+    /*Quitamos el subrayado de los hipervinculos*/
+    text-decoration: none;
+}
+
+.area-derecha {
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    flex-flow: row wrap;
+}
+
+.area-derecha>* {
+    /*Distribuimos el contenido del area derecha segun el espacio*/
+    flex: 1;
+    margin-right: 1.25em;
+}
+
+/*Cambiamos color de letra a los hipervinculos*/
+.caja a {
+    color: #999;
+}
+
+.footer-final {
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+}
+
+.redes {
+    margin-top: 2.2em;
+}
+
+.redes a {
+    background-color: darkorange;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.redes a i{
+    padding: 10px 12px;
+    font-size: 20px;
+    color: white;
+}
+
+.btn{
+    border:none;
+    background-color: darkorange;
+    color: white;
+    padding: 10px 30px;
+}
+
+.caja-busqueda input{
+    height: 36px;
+}
+
+@media screen and (min-width:600px){
+    .area-derecha > *{
+        flex:1;
+    }
+
+    .area-izquierda{
+        flex: 1 0px;
+    }
+
+    .area-derecha{
+        flex: 2 0px;
+    }
+}
+
+@media screen and(max-width:600px){
+    .footer{
+        padding: 15px;
+    }
+
+    .main{
+        font-size: 55px;
+    }
+}
+
+
+
+
+
+
+

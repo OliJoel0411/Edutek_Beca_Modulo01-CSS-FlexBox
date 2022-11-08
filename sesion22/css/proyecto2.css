@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card{
+    width: min(100%, 350px);
+    background-color: #cbd5e1;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    padding:1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card figure{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card img{
+    border:5px double #333;
+    border-radius: 50%;
+}
+
+.card figcaption{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align:center;
+}

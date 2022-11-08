@@ -1,0 +1,123 @@
+#ejercicio3 .parte1,
+#ejercicio3 .parte6 {
+    background-color:
+        #002654;
+}
+
+#ejercicio3 .parte2,
+#ejercicio3 .parte4,
+#ejercicio3 .parte7 {
+    background-color: white;
+}
+
+#ejercicio3 .parte3,
+#ejercicio3 .parte5 {
+    background-color:
+        #ce1126;
+}
+/*
+#ejercicio3 #bajos {
+    border: 5px solid purple;
+}
+
+#ejercicio3 .francia {
+    border: 5px solid green;
+}
+*/
+.contenedor {
+    display: flex;
+}
+
+/*Movemos parte 7 al medio*/
+/*Order su valor por defecto es 0*/
+/*Si dos elementos tienen un mismo valor en order*/
+/*Se aplicara el orden del archivo HTML*/
+
+.contenedor .bajos {
+    order: 1;
+}
+
+.contenedor .parte7 {
+    order: 2;
+}
+
+.contenedor .francia {
+    order: 3;
+}
+
+/*Tamaños*/
+.contenedor {
+    width: 25%;
+    height: 20vh;
+}
+
+#bajos{
+    width: 49%;
+}
+
+#bajos .parte1,
+#bajos .parte2,
+#bajos .parte3{
+    height: 33.33%;
+    width: 33vh;
+}
+
+#bajos .parte3{
+    
+}
+
+#bajos{
+    overflow: hidden;
+}
+
+.contenedor .parte7{
+    width: 2%;
+}
+
+#bajos{
+    display: flex;
+    flex-direction: column;
+}
+
+.francia{
+    display: flex;
+    width: 49%;
+}
+
+.francia .parte4{
+    order:2;
+    width: 33.33%;
+}
+.francia .parte5{
+    order:3;
+    width: 33.33%;
+}
+.francia .parte6{
+    order:1;
+    width: 33.33%;
+}
+
+
+
+/*******************************/
+
+.min{
+    width: min(50%, 300px);
+    height: 200px;
+    background-color: red;
+    border: 1px solid blue;
+
+}
+
+.medida{
+    width: 300px;
+    background-color: blue;
+    height: 5px;
+}
+
+.max{
+    width: max(50%, 300px);
+    height: 200px;
+    background-color: pink;
+    border: 1px solid blue;
+}

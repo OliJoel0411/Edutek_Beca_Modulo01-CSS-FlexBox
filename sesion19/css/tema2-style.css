@@ -1,0 +1,72 @@
+
+body{
+    font-size: 20px;
+    width: 500px;
+}
+
+/*Trabajando con em*/
+#em .contenedor1 {
+    border: 2em solid red;
+    padding: 10em;
+    font-size: 1em;
+    width: 10em;
+}
+
+#em p{
+    font-size: 5em;
+}
+
+#em .contenedor2{
+    font-size: 50px;
+}
+#em img{
+    width: 10em;
+}
+
+/*Trabajando con %*/
+#porcentaje .contenedor1 {
+    border: 3em solid red;
+    padding: 10%;
+    font-size: 100%;
+    width: 10%;
+}
+
+#porcentaje p{
+    font-size: 5em;
+}
+
+#porcentaje .contenedor2{
+    border:1px solid green;
+    font-size: 50px;
+    width: 10%;
+}
+#porcentaje img{
+    width: 10%;
+}
+
+/*Trabajando con rem*/
+#rem .contenedor1 {
+    border: 1rem solid red;
+    padding: 10rem;
+    font-size: 1rem;
+    width: 10rem;
+}
+
+#rem p{
+    font-size: 2rem;
+}
+
+#rem .contenedor2{
+    border:1e solid green;
+    font-size: 50rem;
+    width: 10rem;
+}
+
+#rem img{
+    width: 10rem;
+}
+
+/*
+em -> m -> tamaño de letra del elemento padre
+rem -> root m -> tamaño de letra del elemento raiz (html)
+*/

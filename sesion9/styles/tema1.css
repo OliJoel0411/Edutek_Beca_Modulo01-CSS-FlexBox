@@ -1,0 +1,58 @@
+.externo{
+    border: 1px solid black;
+    background-color: powderblue;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   
+}
+.interno{
+    border: 1px solid red;
+    background-color: green;
+    border-top-width: 1px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ejemplo1, .ejemplo2, .ejemplo3{
+    border: 10px solid blue;
+}
+.ejemplo1{
+    background-color: red;
+    width: 300px;
+    box-sizing: border-box;
+   
+}
+
+.ejemplo2{
+    background-color: chocolate;
+    padding-right: 50px;
+    width: 300px;
+}
+
+.ejemplo3{
+    background-color: chocolate;
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.ejemplo4{
+    background-color: crimson;
+    border: 5px solid black;
+    width: 200px; 
+    height: 100px; 
+    padding: 25px;
+    display: inline-block;
+   
+}
+
+.ejemplo5{
+    background-color: crimson;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+}
+

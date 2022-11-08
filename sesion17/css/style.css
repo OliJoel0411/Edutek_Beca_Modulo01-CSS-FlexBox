@@ -1,0 +1,120 @@
+/*Estilos para el tema 1*/
+ul {
+    display: flex;
+    border: 2px solid red;
+}
+
+li {
+    width: 150px;
+    height: 150px;
+    background-color: cadetblue;
+    margin: 8px;
+    list-style: none;
+}
+
+/*Estilos para el tema 2*/
+#tema2 ul {
+    /*El valor por defecto para flex-direction es row*/
+    /*row, column, row-reverse, column-reverse*/
+    flex-direction: column;
+}
+
+/*Estilos para el tema 3*/
+#tema3 ul {
+    /*El valor por defecto para flex-wrap es nowrap*/
+    /*nowrap, wrap, wrap-reverse*/
+    flex-wrap: wrap;
+}
+
+/*Estilos para el tema 4*/
+#tema4 ul {
+    /*Notación corta para combinar flex-direction y flex-wrap*/
+    /*Por defecto row nowrap*/
+    flex-flow: row-reverse wrap-reverse;
+    /*height: 400px;*/
+}
+
+/*Estilos para el tema 5*/
+#tema5 li{
+    width: 100px;
+    height: 100px;
+}
+
+#tema5 li span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*Comportamiento por defecto al desbordarse el contenido*/
+/*:nth-chile(n) permite estilizar un hijo en especifico*/
+/*El enesimo hijo*/
+#tema5 li:nth-child(1){
+    overflow: visible;
+}
+/*Oculta el contenido desbordado*/
+#tema5 li:nth-child(2){
+    overflow: hidden;
+}
+/*Coloca barras de desplazamiento en vertical u horizontal*/
+#tema5 li:nth-child(3){
+    overflow: scroll;
+}
+/*Coloca barras de desplazamiento segun donde se desborde el contenido*/
+#tema5 li:nth-child(4){
+    overflow: auto;
+}
+
+/*Estilos para el tema 6*/
+#tema6 ul{
+    padding-left: 0px;
+    /*Permite definir la forma de colocar los elementos en el eje main (horizontal)*/
+    /*valor por defecto: flex-start*/
+    /*posibles valores: flex-start || flex-end || center || space-between || space-around || left || right*/
+    justify-content: center;
+}
+
+/*Estilos para el tema 7*/
+
+#tema7 ul{
+    /*Permite distribuir los elementos en el eje cross (vertical)*/
+    /*Valor por defecto: stretch*/
+    /*Posibles valores: flex-start, flex-end, stretch, center*/
+    align-items: center;
+    height: 300px;
+    
+}
+
+#tema7 li{
+    /*El alto debe ser automatico*/
+    height: auto;
+}
+
+#tema7 li:nth-child(1){
+    font-size: 10px;
+}
+
+/*Estilos para el tema 8*/
+
+#tema8 ul{
+    flex-wrap: wrap;
+    /*Permite alinear los elementos cuando estos fluyen en varias lineas*/
+    /*Valor por defecto: stretch*/
+    /*valores: stretch,center, flex-end, flex-start*/
+    align-content: flex-end;
+    height: 400px;
+    
+}
+
+#tema8 li{
+    /*El alto debe ser automatico*/
+    height: auto;
+  
+}
+
+#tema8 li:nth-child(1){
+    font-size: 10px;
+}
+
+
+
+

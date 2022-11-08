@@ -1,0 +1,132 @@
+/*grid-template-columns*/
+#tema1 div[class^="elemento"]{
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#tema1 .contenedor{
+    display: grid;
+    /*Define la cantidad de columnas en nuestro grid*/
+    grid-template-columns: auto auto;
+}
+
+#tema1 .elemento1{
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+/*--------------------------*/
+
+/*grid-template-columns*/
+#tema2 div[class^="elemento"]{
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#tema2 .contenedor{
+    display: grid;
+    /*Define la cantidad de columnas en nuestro grid*/
+    grid-template-columns: auto auto auto;
+    /*Indicamos el tamaño de cada una de las filas*/
+    grid-template-rows:  100px 300px 250px;
+}
+
+#tema2 .elemento2{
+    /*Funciona como rowspan, permite definir la cantidad de filas a ocupar*/
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/*justify-content*/
+
+#tema3 div[class^="elemento"]{
+    background-color: rgb(128, 105, 48);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#tema3 .contenedor{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+
+    /*Alinear la rejilla completa dentro del contenedor de manera horizontal*/
+
+    /*justify-content: stretch;
+    justify-content: space-evenly;
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    */
+    justify-content: space-between;
+    
+}
+
+/*align-content*/
+
+#tema4 div[class^="elemento"]{
+    background-color: #a27e6f;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#tema4 .contenedor{
+    height: 500px;
+    background-color: cadetblue;
+    display:grid;
+    grid-template-columns: auto auto auto;
+
+    /*Controlamos la alineacion vertical*/
+    /*align-content: center;
+    align-content: space-evenly;
+     align-content: space-around;
+     align-content: start;
+     align-content: end;
+
+    */
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 20px;
+    
+    /*Fila, columna*/
+    gap: 20px 10px;
+}
+
+/*Uso de fr*/
+#tema5 div[class^="elemento"]{
+    background-color:#DFBE99;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#tema5 .contenedor{
+    background-color: #B5BD89;
+    display: grid;
+    /*fr (fraction) permite dividir la pantalla en areas iguales*/
+    grid-template-columns: repeat(2,1fr);
+    /*grid-template-columns:1fr 1fr 1fr 1fr;*/
+    
+    grid-template-rows: 3fr 1fr 3fr;
+}
+
+
+
+
+
+

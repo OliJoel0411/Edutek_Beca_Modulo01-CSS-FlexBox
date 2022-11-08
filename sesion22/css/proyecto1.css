@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/**/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.5rem "Nunito", sans-serif;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+    display: flex;
+    flex-direction: column;
+    /*Ocupamos todo el espacio en pantalla*/
+    min-height: 100vh;
+}
+
+header,
+nav,
+main,
+footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: #1E293B;
+    color: white;
+}
+
+nav {
+    background-color: #fff;
+    color: black;
+    padding: 0.5rem;
+    border-bottom: 2px solid black
+}
+
+main {
+    flex-grow: 1;
+}
+
+/*Pequeño*/
+@media screen and (max-width:767px) {
+    body {
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+/*Mediano*/
+@media screen and (min-width:768px) {
+    body {
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+    }
+}
+
+/*Grande*/
+@media screen and (min-width:992px) {
+    body {
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+    }
+}
+
+/*XL*/
+@media screen and (min-width:1200px) {
+    body {
+        background-color: purple;
+        background-image: radial-gradient(whitesmoke, purple);
+    }
+}
+
+
+/*Landscape, Apaisado*/
+@media screen and (min-width:500px) and(min-aspect-ratio: 7/4) {
+    body {
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue)
+    }
+
+    h1, h2{
+        font-size: 1.5rem;
+    }
+    nav{
+        display: none;
+    }
+}

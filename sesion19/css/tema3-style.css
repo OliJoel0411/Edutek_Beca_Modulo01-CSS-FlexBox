@@ -1,0 +1,20 @@
+
+body{
+    font-size: 30px;
+}
+
+p{
+    font-size: 30px;
+}
+
+
+@media print{
+    body{
+        font-size:15px;
+        font-family: monospace,sans-serif;
+    }
+
+    p{
+        text-align: center;
+    }
+}

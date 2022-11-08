@@ -1,0 +1,101 @@
+/*Trabajando con pixeles*/
+
+#px div {
+    border: 2px solid red;
+    padding: 10px;
+    font-size: 30px;
+    width: 100px;
+}
+
+#px p{
+    font-size: 35px;
+}
+
+#px img{
+    width: 100px;
+}
+
+/*Trabajando con puntos*/
+
+#pt div {
+    border: 2pt solid red;
+    padding: 10pt;
+    font-size: 30pt;
+    width: 100pt;
+}
+
+#pt p{
+    font-size: 35pt;
+}
+
+#pt img{
+    width: 100pt;
+}
+
+/*Trabajando con centimetros*/
+
+#cm div {
+    border: 2cm solid red;
+    padding: 1cm;
+    font-size: 3cm;
+    width: 10cm;
+}
+
+#cm p{
+    font-size: 2cm;
+}
+
+#cm img{
+    width: 10cm;
+}
+
+/*Trabajando con pulgadas*/
+
+#in div {
+    border: 0.5in solid red;
+    padding: 1in;
+    font-size: 3in;
+    width: 2in;
+}
+
+#in p{
+    font-size: 0.1in;
+}
+
+#in img{
+    width: 3in;
+}
+
+/*Trabajando con milimetros*/
+
+#mm div {
+    border: 2mm solid red;
+    padding: 1mm;
+    font-size: 3mm;
+    width: 2mm;
+}
+
+#mm p{
+    font-size: 50mm;
+}
+
+#mm img{
+    width: 3mm;
+}
+
+/*Trabajando con picas*/
+
+#pc div {
+    border: 1pc solid red;
+    padding: 1pc;
+    font-size: 1pc;
+    width: 2pc;
+}
+
+#pc p{
+    font-size: 5pc;
+}
+
+#pc img{
+    width: 1pc;
+}
